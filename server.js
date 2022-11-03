@@ -15,8 +15,10 @@ function unixTimestamp () {
     )
   }
 app.get('/', (req, res,) => {
+    app.set('json spaces', 40);
+   // res.json({ a: 1 });
     var name = " my name is Angel Guerra Marquez"; 
-    res.send({message: name, 
+    res.json({message: name, 
     "timestamp": (unixTimestamp()).toString()});
 });
 app.listen(PORT, HOST, () => {
