@@ -1,0 +1,4 @@
+node_modles
+npm-debug.log
+#here we make an ignore file as to preven any overwitting
+#modules as well debugs being coppied on over to the docker image
