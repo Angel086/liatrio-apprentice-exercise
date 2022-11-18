@@ -19,7 +19,7 @@ app.get('/', (req, res,) => {
    // res.json({ a: 1 });
     var name = "My name is Angel Guerra Marquez"; 
     res.json({message: name, 
-    "timestamp": (unixTimestamp()).toString()});
+    "timestamp": (unixTimestamp())});
 });
 app.listen(PORT, HOST, () => {
   console.log(`Running on http://${HOST}:${PORT}`);
