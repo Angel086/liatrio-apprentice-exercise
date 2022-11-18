@@ -8,6 +8,6 @@ RUN npm install
 #Bundle app source code
 COPY . .
 #We use port 8080 we use expose to instruct docker where to map 
-EXPOSE 80
+#EXPOSE 80
 
 CMD ["node","server.js"]
