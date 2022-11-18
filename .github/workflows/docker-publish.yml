@@ -42,6 +42,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
+          ports: 80:80
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/clockbox:latest
       - name: run tests
         uses: liatrio/github-actions/apprentice-action@master
